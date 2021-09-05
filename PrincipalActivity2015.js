@@ -13,9 +13,10 @@ fs.createReadStream("WestBengal.csv")
 
       if (parseInt(x[2]) == 15) {
         year = "20" + x[2];
-        let y = data.PRINCIPAL_BUSINESS_ACTIVITY_AS_PER_CIN;
-        if (typeof PRINCIPALACTIVITY[y] != "undefined") PRINCIPALACTIVITY[y]++;
-        else PRINCIPALACTIVITY[y] = 1;
+        let AnyActivity = data.PRINCIPAL_BUSINESS_ACTIVITY_AS_PER_CIN;
+        if (typeof PRINCIPALACTIVITY[AnyActivity] != "undefined")
+          PRINCIPALACTIVITY[AnyActivity]++;
+        else PRINCIPALACTIVITY[AnyActivity] = 1;
       }
     }
   })
