@@ -25,7 +25,7 @@ fs.createReadStream("WestBengal.csv")
     fs.writeFileSync(
       "Test3.json",
       JSON.stringify(PRINCIPALACTIVITY),
-      "utf-8",
+      "utf-8", //otherwise we get buffer data
       (err) => {
         if (err) console.log(err);
       }

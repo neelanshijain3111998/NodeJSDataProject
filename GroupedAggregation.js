@@ -15,6 +15,7 @@ fs.createReadStream("WestBengal.csv")
         year = "20" + x[2];
         if (parseInt(year) >= 2000 && parseInt(year) <= 2019) {
           if (
+            //{2000:{Agricuture:1},2001:{marketing:5}}
             typeof GROUPEDAGGREGATION[year.toString()] != "undefined" &&
             typeof GROUPEDAGGREGATION[year.toString()][
               data.PRINCIPAL_BUSINESS_ACTIVITY_AS_PER_CIN
